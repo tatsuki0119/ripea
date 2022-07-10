@@ -1,0 +1,391 @@
+/* common */
+
+* {
+  /* font-family: YuGothic,'Yu Gothic','ヒラギノ角ゴシック','Hiragino Sans',sans-serif; */
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+
+li {
+  list-style: none;
+}
+
+span.red {
+  color: red;
+}
+
+span.blue {
+  color: blue;
+}
+
+span.red-big {
+  color: red;
+  font-size: 40px;
+}
+span.red-big2 {
+  color: red;
+  font-size: 32px;
+}
+
+span.blue-big {
+  color: skyblue;
+  font-size: 32px;
+}
+
+span.blue-big02 {
+  color: skyblue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+span.blue-border {
+  border-bottom: blue 1px solid;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+}
+
+header h1 img {
+  width: 180px;
+}
+
+header .open-img {
+  width: 50px;
+}
+
+/* top */
+
+#top {
+  margin-bottom: 24px;
+}
+
+#top .back-img {
+  background-image: url(../img/top-work.png);
+  background-position: center;
+  background-size: cover;
+  padding: 16px 4px 4px 4px;
+}
+
+#top .top-text01 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#top .top-text02 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#top .fukidashi {
+  width: 100%;
+}
+
+#top .top-text03 {
+  background: #EAD067;
+  text-align: center;
+  font-size: 20px;
+}
+
+#top .tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: green 2px solid;
+  padding: 8px 0px 8px 0px; */
+  margin: 8px 0px 8px 0px;
+}
+
+#top .tel img {
+  width: 60px;
+}
+
+#top .tel a {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#top .top-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#top .top-btn p {
+  font-size: 20px;
+  padding: 8px 40px 8px 40px;
+  color: #fff;
+}
+
+#top .top-btn .btn-left {
+  background: #458F68;
+  margin-right: 8px;
+}
+
+#top .top-btn .btn-right {
+  background: #FF0101;
+}
+
+/* gift */
+
+#gift {
+  text-align: center;
+}
+
+#gift .gift-text02 {
+  margin-bottom: 16px;
+}
+
+#gift .gift-text03 {
+  font-weight: bold;
+  background: #EAD067;
+}
+
+#gift .gift-img img {
+  width: 95vw;
+  margin-bottom: 16px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn01 {
+  display: inline-block;
+  background-color: #FF0101;
+  color: #fff;
+  font-size: 24px;
+  padding: 8px 24px 8px 24px;
+  margin: 24px 0px 48px 0px;
+}
+
+/* appeal */
+
+#appeal {
+  background: #EAFAFF;
+  padding-top: 24px;
+}
+
+#appeal h3,
+#appeal p {
+  text-align: center;
+}
+
+#appeal .appeal-text02 {
+  margin: 24px 0px 24px 0px;
+  font-weight: bold;
+}
+
+#appeal ul {
+  border: #000 1px solid;
+  border-radius: 10px;
+  background: #fff;
+  padding: 16px 8px 8px 8px;
+  margin: 0px 8px 16px 8px;
+}
+
+#appeal li {
+  padding-bottom: 8px;
+}
+
+#appeal .appeal-img01 {
+  width: 250px;
+  margin: 0 auto;
+}
+
+#appeal .appeal-img01 img {
+  width: 250px;
+}
+
+#appeal .appeal-text03 {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0px 0px 0px;
+}
+
+#appeal .appeal-text04 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0px 0px 0px;
+}
+
+#appeal .appeal-text05 {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 16px 0px 16px 0px;
+}
+
+/* sympathy */
+
+#sympathy {
+  background: #EAFAFF;
+  padding: 0px 8px 24px 8px;
+}
+
+#sympathy .sympathy-text01 {
+  margin-bottom: 24px;
+}
+
+#sympathy .sympathy-img01 {
+  width: 95vw;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+#sympathy .sympathy-img01 img {
+  width: 95vw;
+}
+
+#sympathy .sympathy-text02 {
+  margin-bottom: 24px;
+}
+
+#sympathy .sympathy-text03 {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#sympathy .sympathy-img02 {
+  width: 70vw;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+#sympathy .sympathy-img02 img {
+  width: 70vw;
+}
+
+/* presen */
+
+#presen {
+  background: #EAFAFF;
+  padding: 0px 8px 0px 8px;
+}
+
+.presen-text01 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.presen-text02 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.presen-img01 {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.presen-img01 img {
+  width: 95vw;
+}
+
+.presen-text03 {
+  margin: 8px 0px 40px 0px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+
+.job {
+  margin-bottom: 48px;
+}
+
+.job .job-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.job .job-text {
+  text-align: justify;
+  margin-bottom: 16px;
+}
+
+.job .job-img {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.job .job-img img {
+  width: 95vw;
+}
+
+.job .job-desc {
+  text-align: center;
+}
+
+.presen-text04 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.8;
+  padding-bottom: 32px;
+}
+
+#price {
+  background: #fff;
+  margin: 24px 0px 0px 0px;
+}
+
+.price-text01 {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: #000 2px solid;
+  font-size: 18px;
+  margin: 0px 8px 0px 8px;
+}
+
+table {
+  width: 90%;
+  margin: 16px auto 0px auto;
+}
+
+table,
+th,
+td {
+  border: #000 1px solid; 
+  border-collapse: collapse;
+  text-align: center;
+  padding: 4px;
+  }
+
+th {
+  background: #fce4d6;
+}
+
+.price-text02 {
+  text-align: center;
+}
+
+
+@media (min-width: 760px) {
+
+}
