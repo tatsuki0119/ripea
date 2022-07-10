@@ -35,7 +35,7 @@
     </div>
     <div class="top-btn">
       <p class="btn-left">全国対応</p>
-      <a href="#"><p class="btn-right">無料相談</p></a>
+      <a href="#form"><p class="btn-right">無料相談</p></a>
     </div>
   </section>
 
@@ -53,7 +53,7 @@
       <img src="img/gift-img06.png" alt="沖縄旅行ツアーです">
       <img src="img/gift-img07.png" alt="箱根旅行ツアーです">
     </div>
-    <a href=""><p class="btn01">今すぐ無料で相談！</p></a>
+    <a href="#form"><p class="btn01">今すぐ無料で相談！</p></a>
   </section>
 
   <!-- appeal -->
@@ -89,7 +89,7 @@
       お客様の時間を無駄に致しません<br>
     </p>
     <div class="btn">
-      <a href=""><p class="btn01">今すぐ無料で相談！</p></a>
+      <a href="#form"><p class="btn01">今すぐ無料で相談！</p></a>
     </div>
   </section>
 
@@ -195,7 +195,7 @@
       <span class="red">※上記は一例です、自治体により条件は異なります</span>
     </p>
     <div class="btn">
-      <a href=""><p class="btn01">今すぐ無料で相談！</p></a>
+      <a href="#form"><p class="btn01">今すぐ無料で相談！</p></a>
     </div>
   </section>
 
@@ -292,8 +292,9 @@
       </span>
     </p>
 
-    <div class="form-back">
+    <div class="form-back" id="form">
       <p class="contact-text03">【フォームでのお問い合わせ】</p>
+
       <form action="" method="post">
   
         <div class="form-item">
@@ -309,18 +310,19 @@
         </div>
   
         <div class="form-item">
-          <select name="" required >
+          <select name="" required id="check" onchange="check()">
             <option value="">今回お見積りをご検討中の物件は、お客様所有(ご家族様所有)の一戸建てですか？</option>
             <option value="はい">はい</option>
-            <option value="いいえ">いいえ</option>
+            <option value="1">いいえ</option>
           </select>
           <p class="down-icon">▼</p>
+          <p><span class="red">※いいえの場合、申し訳ございませんがサービス対象外となります。</span></p>
           <p><span class="red">※賃貸、分譲区分は対象外となります</span></p>
         </div>
   
         <div class="form-item">
           <select name="" required>
-            <option value="施工希望工事">施工希望工事</option>
+            <option value="">施工希望工事</option>
             <option value="外壁">外壁</option>
             <option value="屋根">屋根</option>
           </select>
@@ -330,8 +332,8 @@
   
         <div class="form-item">
           <select name="" required>
-            <option value="施工希望時期">施工希望時期</option>
-            <option value="気になっているので予算と合えば相談したい">気になっているので予算と合えば相談したい</option>
+            <option value="">施工希望時期</option>
+            <option value="">気になっているので予算と合えば相談したい</option>
             <option value="3ヶ月以内">3ヶ月以内</option>
             <option value="6ヶ月以内">6ヶ月以内</option>
           </select>
@@ -340,7 +342,7 @@
   
         <div class="form-item">
           <select name="" required>
-            <option value="ご予算">ご予算</option>
+            <option value="">ご予算</option>
             <option value="〜50万円">〜50万円</option>
             <option value="50万〜100万円">50万〜100万円</option>
             <option value="100万〜300万円">100万〜300万円</option>
@@ -350,12 +352,12 @@
         </div>
   
         <div class="form-item">
-          <input type="text" name="maker" required placeholder="ハウスメーカー">
+          <input type="text" name="maker" required placeholder="ハウスメーカー" >
         </div>
   
         <div class="form-item">
           <select name="" required>
-            <option value="築年数">築年数</option>
+            <option value="">築年数</option>
             <option value="〜10年未満">〜10年未満</option>
             <option value="10〜20年">10〜20年</option>
             <option value="21年以上">21年以上</option>
@@ -529,5 +531,6 @@
     </p>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
