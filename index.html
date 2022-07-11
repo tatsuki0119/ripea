@@ -13,29 +13,167 @@
 <body>
   <header>
     <h1><img src="img/logo.png" alt="リペアRu."></h1>
-    <img class="open-img" src="img/open.png" alt="">
-  </header>
+    <div class="sp-mode">
+      <img id="open" class="open-img" src="img/open.png" alt="">
+      <div class="overlay">
+        <img id="close" src="img/close.png" alt="">
+        <nav>
+          <ul id="sp-menu">
+            <li><a href="#appeal">こんなお悩みありませんか？</a></li>
+            <li><a href="#works">工事事例</a></li>
+            <li><a href="#support">7つのサポート</a></li>
+            <li><a href="#faq">Q&A</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="#company">会社概要</a></li>
+            <li><a href="#policy">プライバシーポリシー</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="pc-mode">
+      <div class="tel">
+        <a class="pc-btn" href="">無料相談</a>
+        <img src="img/tel.png" alt="電話のアイコンです">
+        <a href="tel:03-66823-0755">03-6823-0755</a>
+      </div>
+    </div>
+    </header>
 
   <!-- top -->
   <section id="top">
     <div class="back-img">
-      <p class="top-text01">お住まいでお悩みの全ての方の味方！</p>
-      <p class="top-text02">
-        壁や屋根の修理など<br>
-        工事全般ならお任せ下さい！
-      </p>
-      <p>
-        <img class="fukidashi" src="img/fukidashi.png" alt="お得な情報です">
-      </p>
+      <div class="pc-flex">
+        <div class="pc-top-text-wap">
+          <div class="sp-mode">
+            <p class="top-text01">お住まいでお悩みの全ての方の味方！</p>
+            <p class="top-text02">壁や屋根の修理など<br>工事全般ならお任せ下さい！</p>
+          </div>
+          <div class="pc-mode">
+            <p class="pc-top-text01">お住まいでお悩みの<br>全ての方の味方！</p>
+            <p class="pc-top-text02">壁や屋根の修理など<br>工事全般なら<br>お任せ下さい！</p>
+          </div>
+          <img src="img/fukidashi-pc01.png" alt="">
+          <img src="img/fukidashi-pc02.png" alt="">
+        </div>
+        <div class="pc-mode">
+          <div class="form-back" id="form">
+            <p>　</p>
+      
+            <form action="" method="post">
+        
+              <div class="form-item">
+                <input type="text" name="name" required placeholder="個人名(もしくは会社名、担当者様名)">
+              </div>
+        
+              <div class="form-item">
+                <input type="el" name="tel" required placeholder="お電話番号">
+              </div>
+        
+              <div class="form-item">
+                <input type="email" name="email" required placeholder="メールアドレス">
+              </div>
+        
+              <div class="form-item">
+                <select name="" required id="check" onchange="check()">
+                  <option value="">今回お見積りをご検討中の物件は、お客様所有(ご家族様所有)の一戸建てですか？</option>
+                  <option value="はい">はい</option>
+                  <option value="1">いいえ</option>
+                </select>
+                <p class="down-icon">▼</p>
+                <p><span class="red">※いいえの場合、申し訳ございませんがサービス対象外となります。</span></p>
+                <p><span class="red">※賃貸、分譲区分は対象外となります</span></p>
+              </div>
+        
+              <div class="form-item">
+                <select name="" required>
+                  <option value="">施工希望工事</option>
+                  <option value="外壁">外壁</option>
+                  <option value="屋根">屋根</option>
+                </select>
+                <p class="down-icon">▼</p>
+                <p>(お伺いさせて頂いた際に点検させて頂きますのでご安心下さい)</p>
+              </div>
+        
+              <div class="form-item">
+                <select name="" required>
+                  <option value="">施工希望時期</option>
+                  <option value="">気になっているので予算と合えば相談したい</option>
+                  <option value="3ヶ月以内">3ヶ月以内</option>
+                  <option value="6ヶ月以内">6ヶ月以内</option>
+                </select>
+                <p class="down-icon">▼</p>
+              </div>
+        
+              <div class="form-item">
+                <select name="" required>
+                  <option value="">ご予算</option>
+                  <option value="〜50万円">〜50万円</option>
+                  <option value="50万〜100万円">50万〜100万円</option>
+                  <option value="100万〜300万円">100万〜300万円</option>
+                  <option value="300万円以上">300万円以上</option>
+                </select>
+                <p class="down-icon">▼</p>
+              </div>
+        
+              <div class="form-item">
+                <input type="text" name="maker" required placeholder="ハウスメーカー" >
+              </div>
+        
+              <div class="form-item">
+                <select name="" required>
+                  <option value="">築年数</option>
+                  <option value="〜10年未満">〜10年未満</option>
+                  <option value="10〜20年">10〜20年</option>
+                  <option value="21年以上">21年以上</option>
+                </select>
+                <p class="down-icon">▼</p>
+              </div>
+        
+              <div class="form-item">
+                <select name="" required>
+                  <option value="">世帯年収</option>
+                  <option value="〜300万円">〜300万円</option>
+                  <option value="〜500万円">〜500万円</option>
+                  <option value="〜1,000万円">〜1,000万円</option>
+                  <option value="1,000万円以上">1,000万円以上</option>
+                </select>
+                <p class="down-icon">▼</p>
+              </div>
+        
+              <div class="form-item">
+                <select name="" required>
+                  <option value="">家族構成</option>
+                  <option value="独身">独身</option>
+                  <option value="既婚">既婚</option>
+                </select>
+                <p class="down-icon">▼</p>
+              </div>
+        
+              <div class="submit">
+                <input type="submit" class="submit-btn" name="submit" value="今すぐ無料で相談！">
+              </div>
+        
+            </form>
+            <p>　</p>
+          </div>
+        </div>
+        <div class="sp-mode">
+          <p>
+            <img class="fukidashi" src="img/fukidashi.png" alt="お得な情報です">
+          </p>
+        </div>
+      </div>
     </div>
     <p class="top-text03">火災保険累計給付実績20,000件以上！</p>
-    <div class="tel">
-      <img src="img/tel.png" alt="電話のアイコンです">
-      <a href="tel:03-66823-0755">03-6823-0755</a>
-    </div>
-    <div class="top-btn">
-      <p class="btn-left">全国対応</p>
-      <a href="#form"><p class="btn-right">無料相談</p></a>
+    <div class="sp-mode">
+      <div class="tel">
+        <img src="img/tel.png" alt="電話のアイコンです">
+        <a href="tel:03-66823-0755">03-6823-0755</a>
+      </div>
+      <div class="top-btn">
+        <p class="btn-left">全国対応</p>
+        <a href="#form"><p class="btn-right">無料相談</p></a>
+      </div>
     </div>
   </section>
 
@@ -131,7 +269,7 @@
       全国どこでも、丁寧に対応させて頂きます。<br>
       お住まいの工事ならお任せください！<br>
     </p>
-    <div class="job">
+    <div id="works" class="job">
       <p class="job-title">【外壁塗装工事】</p>
       <p class="job-text">
         塗装の時期は一般的に10年に1度を目安とされております。外壁の塗り替えは「家の美観」を保つためだけではなく、雨や風、紫外線などから「家を守る」という大きな役割も担っています。劣化していた外壁塗膜を綺麗に塗装することにより、新築のような輝きに戻すことができます。
